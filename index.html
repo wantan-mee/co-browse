@@ -215,6 +215,8 @@ Upscope('init');
 </script>
 
 <script>
+
+
 // If the user is logged in, optionally identify them with the following method.
 // You can call Upscope('updateConnection', {}); at any time.
 Upscope('updateConnection', {
@@ -224,5 +226,8 @@ Upscope('updateConnection', {
   // Set the user name or email below (e.g. ["John Smith", "john.smith@acme.com"]).
   identities: ["list", "of", "identities", "here"]
 });
+
+
+Upscope('updateConnection', {agentPrompt: "On this page, remind them of the ability to turn off typing if they wish"})
 </script>
 </html>
