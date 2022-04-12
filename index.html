@@ -248,10 +248,11 @@ Upscope('updateConnection', {agentPrompt: "Remember Buy Toto"})
             device_id: "A12345",
             device_name: "Laptop2"
         }; 
-        CobrowseIO.start({register:false});
+       
         CobrowseIO.on('session.updated', session => {
             console.log('A session was updated', session)
         });
+       CobrowseIO.start();
     });
     
 </script>
