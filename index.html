@@ -242,7 +242,7 @@ Upscope('updateConnection', {agentPrompt: "Remember Buy Toto"})
 
     CobrowseIO.license = "YlgGGC652luXdA";    
     CobrowseIO.client().then(function(){
-        CobrowseIO.start();
+        CobrowseIO.start({register:false});
         CobrowseIO.on('session.updated', session => {
             console.log('A session was updated', session)
         });
