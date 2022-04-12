@@ -252,6 +252,7 @@ Upscope('updateConnection', {agentPrompt: "Remember Buy Toto"})
         CobrowseIO.on('session.updated', session => {
             console.log('A session was updated', session)
         });
+      CobrowseIO.redactedViews = ['.maskme', '#name1' ];
        CobrowseIO.start();
     });
     
