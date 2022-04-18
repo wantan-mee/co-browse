@@ -205,7 +205,7 @@
       <button onclick= "Surfly.session().startLeader()">Start a session</button>
     </div>
   </body>
-
+<!--
 <script>
   
 // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
@@ -233,7 +233,8 @@ Upscope('updateConnection', {agentPrompt: "Remember Buy Toto"})
 
 
 </script>
-  
+  -->
+  <!--
   <script>
     (function(w,t,c,p,s,e){p=new Promise(function(r){w[c]={client:function(){if(!s){
     s=document.createElement(t);s.src='https://js.cobrowse.io/CobrowseIO.js';s.async=1;
@@ -257,7 +258,7 @@ Upscope('updateConnection', {agentPrompt: "Remember Buy Toto"})
     });
     
 </script>
-  
+    
   <script>
 CobrowseIO.client().then(function() {
     var button = document.createElement('div');
@@ -346,7 +347,7 @@ button.addEventListener('click', showSessionCode);
 
   </script>
   
-  
+
   
     <script>
 (function(c,o,v,i,e,w){c[v]=c[v]||function(){(c[v].a=c[v].a||[]).push(arguments)};var s=o.createElement(i);s.src=e;s.async=1;var h=o.getElementsByTagName(i)[0];h.parentNode.insertBefore(s,h);c.addEventListener('error',function(err){c[v]('error',err)});c.addEventListener('message',function(msg){c[v]('message',msg)})})(window,document,'coview','script','https://cdn.coview.com/coview.js');
@@ -354,5 +355,32 @@ coview('start', {
   projectKey:'SXjBN_kFjyY'
 });
 </script>
+  -->
   
+           <script>
+              ! function () {
+                var e = window.Median = window.Median || [];
+                if (!e._initialized)
+                  if (e._snippet_loaded) console.warn("Median Snippet loaded twice.");
+                  else {
+                    e._snippet_loaded = !0, e._snippet_version = 3, e.methods = ["init", "identify", "endSession",
+                      "on"], e.factory = function (n) {
+                        return function () {
+                          var t = Array.prototype.slice.call(arguments);
+                          e.push([n, t])
+                        }
+                      };
+                    for (var n = 0; n < e.methods.length; n++) {
+                      var t = e.methods[n];
+                      e[t] = e.factory(t)
+                    }
+                    var i = document.createElement("script");
+                    i.type = "text/javascript", i.async = !0, i.src =
+                    "https://js.hellomedian.com/v1/mdn-screenshare.js";
+                    var a = document.getElementsByTagName("script")[0];
+                    a.parentNode.insertBefore(i, a)
+                  }
+              }();
+              Median.init("64597cb0-1263-4967-ab6c-593e52994800");
+        </script>
 </html>
